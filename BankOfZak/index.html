@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M13 Assignment - The Bank Account Application On Steroids</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        .card           {border: 1px solid black;}
+        output          {font-size: 0.8em;}
+    </style>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header id="main-header" class="bg-dark text-white p-4 mb-3">
+        <div class="container-fluid">
+            <h1 class="header-title">Bank of Zak</h1>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4">
+                <div id="main" class="card card-body">
+                    <h2 class="title mb-4">New Account Information</h2>
+                    <form action="" id="addForm">
+                        <label for="id">8-Digit Account Number</label><br>
+                        <input type="text" maxlength="8" required id="id" class="form-control">
+
+                        <label for="name">Account Owner's Name</label><br>
+                        <input type="text" required id="name" class="form-control"><br>                        
+
+                        <label for="balance">Initial Deposit Amount</label><br>
+                        <input type="text" id="balance" class="form-control"><br>
+
+                        <input type="submit" class="btn btn-dark" value="Create New Account">
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div id="main" class="card card-body">
+                    <h2 class="title mb-4">Bank Accounts <small><output id="bankAcctCount"></output></small></h2>
+                    <table id="accounts" class="table table-striped">
+                        <tr>
+                            <th>Account Number</th>
+                            <th>Account Owner's Name</th>
+                            <th>Balance</th>
+                            <th>&nbsp;</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
